@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { RestablecerPassPageRoutingModule } from './restablecer-pass-routing.module';
 
 import { RestablecerPassPage } from './restablecer-pass.page';
+import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RestablecerPassPageRoutingModule
+    RestablecerPassPageRoutingModule,
+    ComponentsModule
   ],
   declarations: [RestablecerPassPage]
 })
