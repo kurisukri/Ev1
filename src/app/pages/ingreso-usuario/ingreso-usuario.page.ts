@@ -35,7 +35,7 @@ export class IngresoUsuarioPage implements OnInit {
         }
       }
 
-      this.router.navigate(['/lista'],navextras);
+      this.router.navigate(['/home'],navextras);
 
     }
       else {
