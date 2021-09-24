@@ -29,18 +29,18 @@ export class ListaPage implements OnInit {
     }
   ]
 
-  usuario:string='';
+  // usuario:string='';
 
-  constructor(private activeroute:ActivatedRoute, private router:Router) { 
-    this.activeroute.queryParams.subscribe(
-      params => {
-        if(this.router.getCurrentNavigation().extras.state){
-          this.usuario=this.router.getCurrentNavigation().extras.state.miusuario.username;
-          console.log(this.usuario);
-        }
-      }
-    )
-  }
+  // constructor(private activeroute:ActivatedRoute, private router:Router) { 
+  //   this.activeroute.queryParams.subscribe(
+  //     params => {
+  //       if(this.router.getCurrentNavigation().extras.state){
+  //         this.usuario=this.router.getCurrentNavigation().extras.state.miusuario.username;
+  //         console.log(this.usuario);
+  //       }
+  //     }
+  //   )
+  // }
 
   ngOnInit() {
   }
