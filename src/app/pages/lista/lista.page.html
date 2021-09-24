@@ -1,5 +1,11 @@
 
 <app-encabezado titulo="Disponibilidad" icono="list"></app-encabezado>
+
+<ion-text color="primary">
+  <h3 *ngIf="usuario===''" ></h3>
+  <h3 *ngIf="usuario!==''" >Bienvenido {{usuario}} !! a continuación la lista de los uberduoc disponibles</h3>
+</ion-text>
+
 <ion-content>
   <ion-list>
     <ion-list *ngFor="let per of personas; let i=index" >
@@ -12,3 +18,5 @@
     </ion-list>
   </ion-list>
 </ion-content>
+
+

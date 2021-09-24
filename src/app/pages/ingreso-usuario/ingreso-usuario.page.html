@@ -7,8 +7,8 @@
   <ion-card-header>
     
     <form #miformulario="ngForm" (ngSubmit)="onSubmit()">
-      <ion-input placeholder="Usuario"></ion-input>
-      <ion-input required type="password" name="usr" placeholder="Contraseña"></ion-input>
+      <ion-input required type="text" name="usr" placeholder="Usuario" [(ngModel)]="usuario.username"></ion-input>
+      <ion-input required type="password" name="psw" placeholder="Contraseña" [(ngModel)]="usuario.password"></ion-input>
       <ion-button color="dark" type="submit" expand="block" [disabled]="miformulario.invalid">
         Iniciar Sesión
       </ion-button>

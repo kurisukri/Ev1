@@ -11,6 +11,12 @@
 
 <ion-content class="ion-padding">
 <ion-text color="primary">
-  <p>Ingrese correo de recuperación</p>
+  
+  <form #miformulario="ngForm" (ngSubmit)="onSubmit()">
+    <ion-input  required type="text" name="usr" placeholder="Ingrese aquí su correo institucional" [(ngModel)]="usuario.correo"></ion-input>
+    <ion-button color="dark" type="submit" expand="block" [disabled]="miformulario.invalid">
+      Enviar Correo Recuperación
+    </ion-button>
+  </form>
 </ion-text>
 </ion-content>
