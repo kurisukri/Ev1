@@ -26,6 +26,7 @@ export class AppComponent {
       texto:"Recuperar Password",
       icono:"bulb-outline"
     }
+    
   ]  
   constructor() {}
 }
