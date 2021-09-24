@@ -6,8 +6,8 @@
     </ion-button>
 
     
-    <ion-title>
-      TE LLEVO APP 
+    <ion-title >
+     
     </ion-title>
     
     <ion-buttons slot="start">
@@ -16,14 +16,27 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
- <h1 >Servicio de transporte DuocUC</h1><ion-icon name="car-sport-outline"></ion-icon>
+    <ion-card>
+      
+      <ion-card-header>
+        <ion-card-subtitle>Duoc UC</ion-card-subtitle>
+        <ion-card-title>
+          <ion-img src="../assets/images/te-llevo-app.png"></ion-img> 
+          <!-- <ion-img [src]="ava.srcimagen"></ion-img> -->
+        </ion-card-title>
+        
+      </ion-card-header>
+      
+      <ion-card-content>
+       <ion-button expand="block" color="light" routerLink="../ingreso-usuario">Iniciar Sesión</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+ 
+
+ 
 
 
- <ion-button expand="block" color="light" routerLink="../ingreso-usuario">Iniciar Sesión</ion-button>
-
-
-</ion-content>
 
 
 
