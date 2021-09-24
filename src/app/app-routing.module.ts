@@ -19,6 +19,10 @@ const routes: Routes = [
     path: 'restablecer-pass',
     loadChildren: () => import('./pages/restablecer-pass/restablecer-pass.module').then( m => m.RestablecerPassPageModule)
   },
+  {
+    path: 'lista',
+    loadChildren: () => import('./pages/lista/lista.module').then( m => m.ListaPageModule)
+  },
 ];
 
 @NgModule({

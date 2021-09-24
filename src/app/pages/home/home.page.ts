@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  // logo=[{
+  //   srcimagen: "../assets/images/te-llevo-app.png"
+  // }]
+
   constructor() {}
 
 }

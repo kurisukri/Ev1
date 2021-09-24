@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngresoUsuarioPage implements OnInit {
 
+  usuario={
+    username:'',
+    password:'',
+  }
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(){
+
   }
 
 }
