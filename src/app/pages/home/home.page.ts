@@ -12,17 +12,7 @@ export class HomePage {
   //   srcimagen: "../assets/images/te-llevo-app.png"
   // }]
 
-  usuariox:string='';
 
-  constructor(private activeroute:ActivatedRoute, private router:Router) { 
-    this.activeroute.queryParams.subscribe(
-      params => {
-        if(this.router.getCurrentNavigation().extras.state){
-          this.usuariox=this.router.getCurrentNavigation().extras.state.miusuario.username;
-          console.log(this.usuariox);
-        }
-      }
-    )
-  }
+  
 
 }
