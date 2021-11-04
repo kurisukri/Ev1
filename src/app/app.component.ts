@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Opmenu } from './interfaces/opmenu';
+import { Storage } from '@ionic/storage-angular';
 
 @Component({
   selector: 'app-root',
@@ -28,5 +29,10 @@ export class AppComponent {
     }
     
   ]  
-  constructor() {}
+  constructor(private storage:Storage) {}
+
+  async ngOnInit() {
+    await this.storage.create();
+  }
+
 }

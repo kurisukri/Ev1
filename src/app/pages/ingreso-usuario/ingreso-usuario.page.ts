@@ -13,6 +13,7 @@ export class IngresoUsuarioPage implements OnInit {
   usuario={
     username:'',
     password:'',
+    activo:0
   }
 
   constructor(private alertController:AlertController, private router:Router) { }
