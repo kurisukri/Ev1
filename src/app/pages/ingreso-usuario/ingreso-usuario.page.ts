@@ -14,8 +14,13 @@ export class IngresoUsuarioPage implements OnInit {
 
   user={
     username:'',
-    password:'',
-    activo:0
+    password:''
+  }
+
+  sesion:Sesion=
+  {
+    valor:0,
+    username:''
   }
 
   
@@ -38,7 +43,9 @@ export class IngresoUsuarioPage implements OnInit {
       if(u.password == usuario.password)
       {
         console.log("Todo bien todo correcto");
-        await this.storage.set('sesion',1);
+        this.sesion.valor=1;
+        this.sesion.username=this.user.username;
+        await this.storage.set('sesion',this.sesion);
         this.router.navigate(['./lista']);
         return
           
