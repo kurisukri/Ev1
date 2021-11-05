@@ -22,7 +22,9 @@ export class HomePage implements OnInit{
   {
     this.comidaservice.getCategorias().subscribe(resp=>
       {
-        console.log('categorias',resp);
+        //console.log('categorias',resp.categories);
+        this.categorias.push(...resp.categories); //push: colocar elemento al final del arreglo
+        console.log("Mi arreglo: ", this.categorias);
       })
   }
 }

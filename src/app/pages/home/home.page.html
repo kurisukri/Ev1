@@ -34,6 +34,27 @@
       </ion-card-content>
     </ion-card>
 
+
+  <ion-content class="ion-padding">
+    <ion-list *ngFor="let cat of categorias ; let i=index" >
+      <ion-text color="primary">
+        <p>Publicidad</p>
+        <ion-button expand="block" routerLink="../tipocomidas">
+          Tipo de Comidas!
+        </ion-button>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>{{cat.strCategory}}</ion-card-subtitle>
+            <ion-card-title></ion-card-title>
+          </ion-card-header>
+          <ion-img src="{{cat.strCategoryThumb}}"></ion-img>
+          <ion-card-content>
+            Awesome content
+          </ion-card-content>
+        </ion-card>
+      </ion-text>
+    </ion-list>
+  </ion-content>
  
 
  
