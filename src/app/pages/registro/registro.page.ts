@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from 'src/app/interfaces/usuario';
 import { Storage } from '@ionic/storage-angular';
+import { Router } from '@angular/router';
 Storage
 
 @Component({
@@ -10,27 +11,27 @@ Storage
 })
 export class RegistroPage implements OnInit {
 
-  usuario:Usuario=
+  user:Usuario=
   {
     username:'',
     password:'',
-    activo:0
   }
 
 
-  constructor(private storage:Storage) { }
+  constructor(private storage:Storage, private router:Router) { }
 
   ngOnInit() {
   }
   
   onSubmit(){
-    console.log(this.usuario);
-    this.guardar(this.usuario);
+    console.log(this.user);
+    this.guardar(this.user);
+    this.router.navigate(['/lista'])
   }
 
-  async guardar(usr:Usuario)
+  async guardar(user:Usuario)
   {
-    await this.storage.set(usr.username.toString(), usr);
-    console.log("--------Usuario agregado-----------")
+    await this.storage.set(this.user.username,user);
+    
   }
 }

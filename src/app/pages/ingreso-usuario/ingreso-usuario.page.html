@@ -7,16 +7,16 @@
   <ion-card-header>
     
     <form #miformulario="ngForm" (ngSubmit)="onSubmit()">
-      <ion-input required type="text" name="usr" placeholder="Usuario" [(ngModel)]="usuario.username"></ion-input>
-      <ion-input required type="password" name="psw" placeholder="Contraseña" [(ngModel)]="usuario.password"></ion-input>
-      <ion-button color="dark" type="submit" expand="block" [disabled]="miformulario.invalid">
+      <ion-input required type="text" name="usrname" placeholder="Usuario" [(ngModel)]="user.username"></ion-input>
+      <ion-input required type="password" name="psw" placeholder="Contraseña" [(ngModel)]="user.password"></ion-input>
+      <ion-button  color="dark" type="submit" expand="block" [disabled]="miformulario.invalid">
         Iniciar Sesión
       </ion-button>
       
       
     </form>
   </ion-card-header>
-  <ion-img src="../assets/images/te-llevo-app.png"></ion-img> 
+  <ion-img class="animate__animated animate__backInLeft" src="../assets/images/te-llevo-app.png"></ion-img> 
 
   
 </ion-text>

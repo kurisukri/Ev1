@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes, CanActivate } from '@angular/router';
+import { LogincontrolGuard } from './guards/logincontrol.guard';
 
 const routes: Routes = [
   {
@@ -21,7 +22,8 @@ const routes: Routes = [
   },
   {
     path: 'lista',
-    loadChildren: () => import('./pages/lista/lista.module').then( m => m.ListaPageModule)
+    loadChildren: () => import('./pages/lista/lista.module').then( m => m.ListaPageModule),
+    canActivate:[LogincontrolGuard]
   },
   {
     path: 'registro',

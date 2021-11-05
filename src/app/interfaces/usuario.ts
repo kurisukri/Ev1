@@ -1,5 +1,9 @@
 export interface Usuario {
-    username:String;
-    password:String;
-    activo:number;
+    username:string;
+    password:string;
+}
+
+export interface Sesion {
+    valor:number,
+    username:string
 }
